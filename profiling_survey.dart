@@ -1,6 +1,5 @@
-import 'package:acq/survey_result.dart';
+import 'survey_result.dart';
 import 'package:flutter/material.dart';
-
 
 class MySurvey extends StatefulWidget{
   @override
@@ -318,22 +317,22 @@ class ProfilingSurvey extends State<MySurvey> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 6.0),
-                            child: Text(
-                                "How would you describe yourself as?",
-                              style: TextStyle(fontSize: 20.0),
-                            ),
-                          ),
-                          RadioListTile(
-                            value: 0,
-                            groupValue: radioValue1,
-                            onChanged: handleRadioChange1,
-                            title: Text(
-                              "Intelligent",
-                              style: TextStyle(fontSize: 16.0),
-                            ),
-                          ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 6.0),
+                      child: Text(
+                        "How would you describe yourself as?",
+                        style: TextStyle(fontSize: 20.0),
+                      ),
+                    ),
+                    RadioListTile(
+                      value: 0,
+                      groupValue: radioValue1,
+                      onChanged: handleRadioChange1,
+                      title: Text(
+                        "Intelligent",
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                    ),
                     RadioListTile(
                       value: 1,
                       groupValue: radioValue1,
