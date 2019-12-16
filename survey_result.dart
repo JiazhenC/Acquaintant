@@ -60,34 +60,34 @@ class _survey_ResultState extends State<survey_Result> {
     return WillPopScope(
         onWillPop: alertBack2,
         child: Scaffold(
-        appBar: AppBar(
-        leading: IconButton(
-        icon: Icon(Icons.arrow_back),
-    onPressed: () {
-          alertBack2();
-    },
-    ),
-    title: Text("Result"),
-    ),
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                alertBack2();
+              },
+            ),
+            title: Text("Result"),
+          ),
           body: Container(
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text("Your total score is ${widget.result}",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),),
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),),
                   Text("You are suitble to be a ${widget.description}",
-                  style: TextStyle(
-                    fontSize: 20,
-                  )),
+                      style: TextStyle(
+                        fontSize: 20,
+                      )),
                 ],
               ),
             ),
 
           ),
-    )
+        )
     );
   }
 }
